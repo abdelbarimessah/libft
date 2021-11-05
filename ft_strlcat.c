@@ -6,12 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:48:25 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/03 13:24:23 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:43:31 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
+#include "libft.h"
 
 size_t ft_strlcat(char *dst, const char *src, size_t size)
 {

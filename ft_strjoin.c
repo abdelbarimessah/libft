@@ -6,13 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:16:54 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/04 13:52:07 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:43:27 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include "libft.h"
 
 char *ft_strjoin(char const *s1, char const *s2)
 {
@@ -25,7 +23,7 @@ char *ft_strjoin(char const *s1, char const *s2)
     j = 0;
     k = 0;
     if(s1 == 0 || s1 == 0)
-        return(NULL);n
+        return(NULL);
     i = strlen(s1);
     j = strlen(s1);
     str = (char *)malloc((i + j + 1) * sizeof(char));

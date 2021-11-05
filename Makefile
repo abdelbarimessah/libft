@@ -6,7 +6,7 @@
 #    By: amessah <amessah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 16:54:26 by amessah           #+#    #+#              #
-#    Updated: 2021/11/04 13:35:20 by amessah          ###   ########.fr        #
+#    Updated: 2021/11/05 13:56:29 by amessah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,14 @@ SRC =   ft_memset.c     \
 		ft_strdup.c 	\
 		ft_substr.c		\
 		ft_strjoin.c 	\
+		ft_strtrim.c	\
+		ft_putchar_fd.c	\
+		ft_putstr_fd.c	\
+		ft_putendl_fd.c	\
+		ft_putnbr_fd.c	\
+		ft_strmapi.c 	\
+		ft_itoa.c		\
+			
 
 OBJECTS = $(SRC:.c=.o)
 

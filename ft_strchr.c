@@ -6,12 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:44:56 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/03 09:46:24 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 11:15:05 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include<stdio.h>
+#include "libft.h"
 
 char *ft_strchr(const char *s, int c)
 {
@@ -31,10 +30,11 @@ char *ft_strchr(const char *s, int c)
     } 
     return(NULL);
 }
+/*
 int main()
 {
     char t[] = "abdomesaah";
     printf("%s\n",ft_strchr(t,'a'));
     char j[] = "abdomesaah";
     printf("%s",ft_strchr(j,'a'));
-}
+}*/

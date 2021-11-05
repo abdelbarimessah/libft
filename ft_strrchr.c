@@ -6,12 +6,12 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:51:05 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/02 16:44:00 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:44:04 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-#include<stdio.h>
+#include "libft.h"
+
 char *ft_strrchr(const char *s, int c)
 {
     char c1;

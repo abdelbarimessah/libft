@@ -6,13 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:36:01 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/03 17:36:44 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:43:23 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
+#include "libft.h"
 
 char		*ft_strdup(const char *s1)
 {

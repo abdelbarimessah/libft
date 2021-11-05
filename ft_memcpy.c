@@ -6,12 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:42:46 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/02 19:51:21 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:42:45 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
+#include "libft.h"
 
 void   *ft_memcpy(void  *dst, const void  *src, size_t n)
 {

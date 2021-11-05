@@ -1,39 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 09:31:54 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:42:39 by amessah          ###   ########.fr       */
+/*   Created: 2021/11/05 10:28:28 by amessah           #+#    #+#             */
+/*   Updated: 2021/11/05 10:59:07 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    size_t i;
-    unsigned char *str1;
-    unsigned char *str2;
+    char *str;
+    char *s1;
+    unsigned int i;
     
+    if(s == 0)
+        return(0);
     i = 0;
-    str1 = (unsigned char *)s1;
-    str2 = (unsigned char *)s2;
-    while (i < n)
+    s1 = (char *)s;
+    str = (char *)malloc((strlen(s) + 1) * sizeof(char));
+    if(str == 0)
+        return(0);
+    while(s[i])
     {
-        if(str1[i] != str2[i])
-            return(str1[i] - str2[i]);
+        str[i] = f(i,s1[i]);
         i++;
     }
-    return(0);
+    str[i] = '\0';
+    return(str);
 }
+/*
+char asciimod(unsigned i, char c)
+{
+    return (c + i);
+
+}*/
 /*
 int main()
 {
-    char s1[]= "abdo";
-    char s2[] = "abda";
-    printf("%d\n",ft_memcmp(s1,s2,3));
-    printf("%d",memcmp(s1,s2,3));
+    char c[] = "abdomessah";
+    printf("%s", ft_strmapi(c, asciimod));
 }*/

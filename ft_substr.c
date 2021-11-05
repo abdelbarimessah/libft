@@ -6,13 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:33:24 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/04 13:01:13 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:44:18 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
+#include "libft.h"
 
 char    *ft_substr(char const *s, unsigned int start,size_t len)
 {

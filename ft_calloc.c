@@ -6,14 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:38:17 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/03 16:43:25 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:41:44 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-
+#include "libft.h"
 
 void *ft_calloc(size_t count, size_t size)
 {

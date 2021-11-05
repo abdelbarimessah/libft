@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:15:07 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:43:42 by amessah          ###   ########.fr       */
+/*   Created: 2021/11/05 09:33:36 by amessah           #+#    #+#             */
+/*   Updated: 2021/11/05 09:54:21 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+void ft_putnbr_fd(int n, int fd)
 {
-    int i;
-    i = 0;
-    while(str[i])
+    unsigned int n1;
+    
+    n1 = n;
+    if(n1 < 0)
     {
-        i++;
+        ft_putchar_fd('-',fd);
+        n1 = n * (-1);
     }
-    return(i);
+    if(n1 > 9)
+    {
+        ft_putnbr_fd(n1 / 10,fd);
+        ft_putnbr_fd(n1 % 10,fd);
+    }
+    else
+        ft_putchar_fd(n1 + '0',fd);
 }
-/*int main()
-{
-    printf("%d\n",ft_strlen("fbjdnb"));
-    printf("%lu",strlen("fbjdnb"));   
-}
-*/

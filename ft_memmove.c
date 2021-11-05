@@ -6,12 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:17:47 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/02 16:45:50 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:42:50 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
+#include "libft.h"
 
 
 void *ft_memmove(void *dst, const void *src, size_t len)
@@ -38,10 +37,10 @@ void *ft_memmove(void *dst, const void *src, size_t len)
     }
     return((void *)dst);
 }
-
-/*int main ()
+/*
+int main ()
 {
-    char d[] = "aaaaaaaaaaaaaaaaaaaaaaaaa";
+    char d[] = "aaaaaa";
     char s[] = "ooooooooooooooooo";
     char d1[] = "aaaaaaaaaaaaaaaaaaaaaaaaa";
     char s1[] = "oooooooooooooooooo";

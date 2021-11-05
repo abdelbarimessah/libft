@@ -6,12 +6,11 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:13:19 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/02 16:47:16 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/05 09:42:05 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
 int ft_isascii(int c)
 {
