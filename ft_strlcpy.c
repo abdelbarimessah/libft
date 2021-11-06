@@ -6,7 +6,7 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:54:27 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:43:35 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/06 18:10:10 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
     size_t len;
     
     i = 0;
-    len = strlen(src);
+    len = ft_strlen(src);
     if (src == 0 || dst == 0)
         return(0);
     while(i < (int)size - 1 && src[i])

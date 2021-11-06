@@ -6,7 +6,7 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:17:47 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:42:50 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/06 18:08:08 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ void *ft_memmove(void *dst, const void *src, size_t len)
             d[len] = s[len];
         }
     } 
-    //if(d < s)
-      //  ft_memcpy(d,s,len); when you do the makefile
     while(len--)
     {
         *d++ = *s++;

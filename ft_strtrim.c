@@ -6,7 +6,7 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:02:36 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:44:12 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/06 18:11:07 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@ char *ft_strtrim(char const *s1, char const *set)
     i = 0;
      if(!set || !s1)
         return(0);
-    str = strdup(s1);
+    str = ft_strdup(s1);
     if(str == 0)
         return(0);
     while(check(str[i],set))
         i++;
-    len = strlen(str) - 1;
+    len = ft_strlen(str) - 1;
     while(len > 0)
     {
         if(check(str[len],set) == 0)
@@ -48,7 +48,7 @@ char *ft_strtrim(char const *s1, char const *set)
         str[len] = '\0';
         len --;
     }
-    return(strdup(str + i));
+    return(ft_strdup(str + i));
 }
 /*
 int main(int ac,char *av[])

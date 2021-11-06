@@ -6,7 +6,7 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:48:25 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:43:31 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/06 18:10:03 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 	int len;
 
 	i = 0;
-	len = strlen(dst);
+	len = ft_strlen(dst);
 	while ((i + len + 1) < (int)size && src[i])
 	{
 		dst[len + i] = src[i];
@@ -27,9 +27,9 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 	if ((int)size > len)
 	{
 		dst[len + i] = '\0';
-		return (len + strlen(src));
+		return (len + ft_strlen(src));
 	}
-	return (size + strlen(src));
+	return (size + ft_strlen(src));
 }
 /*
 int main()

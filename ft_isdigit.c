@@ -6,20 +6,19 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:07:19 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:42:10 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/06 18:49:36 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit (int c )
+int	ft_isdigit(int c )
 {
-    if (c >= 48 && c <= 57)
-        return(1);
-    else 
-        return(0);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }
-
 /*int main()
 {
     printf("%d\n",ft_isdigit('a'));   
