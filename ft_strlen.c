@@ -6,25 +6,26 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:15:07 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:43:42 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/17 00:00:46 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    int i;
-    i = 0;
-    while(str[i])
-    {
-        i++;
-    }
-    return(i);
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
 }
-/*int main()
+/*
+int main()
 {
-    printf("%d\n",ft_strlen("fbjdnb"));
-    printf("%lu",strlen("fbjdnb"));   
-}
-*/
+    printf("%zu\n",ft_strlen("1337"));
+    printf("%lu",strlen("1337"));   
+}*/

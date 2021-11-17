@@ -6,14 +6,13 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 13:30:29 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/06 16:15:19 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/12 13:02:26 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-void    ft_lstadd_front(t_list **alst, t_list *new)
+void	ft_lstadd_front(t_list **alst, t_list *new)
 {
 	if (alst)
 	{
@@ -21,7 +20,8 @@ void    ft_lstadd_front(t_list **alst, t_list *new)
 			new->next = *alst;
 		*alst = new;
 	}
-}/*
+}
+/*
 int main ()
 {
 	t_list *new;

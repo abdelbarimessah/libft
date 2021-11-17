@@ -6,23 +6,23 @@
 /*   By: amessah <amessah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 09:31:26 by amessah           #+#    #+#             */
-/*   Updated: 2021/11/05 09:43:04 by amessah          ###   ########.fr       */
+/*   Updated: 2021/11/12 11:50:25 by amessah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-    int i;
-    
-    i = 0;
-    if(s == 0)
-        return;
-    while(s[i])
-    {
-        write(fd,&s[i],1);
-        i++;
-    }
-    write(fd,"\n",1);
+	int	i;
+
+	i = 0;
+	if (s == 0)
+		return ;
+	while (s[i])
+	{
+		write (fd, &s[i], 1);
+		i++;
+	}
+	write (fd, "\n", 1);
 }

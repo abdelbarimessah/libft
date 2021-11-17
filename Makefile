@@ -6,13 +6,13 @@
 #    By: amessah <amessah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 16:54:26 by amessah           #+#    #+#              #
-#    Updated: 2021/11/06 18:03:43 by amessah          ###   ########.fr        #
+#    Updated: 2021/11/17 15:09:03 by amessah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -50,17 +50,18 @@ SRC =   ft_memset.c     \
 		ft_itoa.c		\
 		ft_split.c		\
 		ft_striteri.c	\
-		ft_lstnew.c		\
-		ft_lstadd_front.c	\
-		ft_lstsize.c 	\
-		ft_lstlast.c 	\
-		ft_lstadd_back.c 	\
-		ft_lstdelone.c	\
-		ft_lstclear.c	\
-		ft_lstiter.c	\
-		ft_lstmap.c 	\
 		
-			
+BNS_SRCS = ft_lstnew.c \
+			  ft_lstadd_front.c \
+			  ft_lstsize.c \
+			  ft_lstlast.c \
+			  ft_lstadd_back.c \
+			  ft_lstdelone.c \
+			  ft_lstclear.c \
+			  ft_lstiter.c \
+			  ft_lstmap.c \
+			  
+BNS_OBJS = $(BNS_SRCS:.c=.o)
 
 OBJECTS = $(SRC:.c=.o)
 
@@ -69,15 +70,18 @@ INCLUDES = libft.h \
 all: $(NAME)
 
 $(NAME): $(OBJECTS) $(INCLUDES)
-	ar rcs $(NAME) $(OBJECTS)
+	ar rc $(NAME) $(OBJECTS)
+
+bonus: $(NAME) $(BNS_OBJS)
+	ar rc $(NAME) $(BNS_OBJS)
 
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
-
+	
 clean:
-	rm -rf $(OBJECTS)
+	rm -rf $(OBJECTS) $(BNS_OBJS)
 
 fclean: clean
-	rm -rf $(NAME)
+	rm -rf $(NAME) $(BNS_OBJS)
 
 re: fclean all
